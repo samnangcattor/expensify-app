@@ -18,9 +18,9 @@ store.dispatch(setTextFilter('water'));
 const state = store.getState();
 const visableExpenses = getVisibleExpenses(state.expenses, state.filters);
 
-setTimeout(() => {
-  store.dispatch(setTextFilter('bill'));
-}, 3000);
+// setTimeout(() => {
+//   store.dispatch(setTextFilter('bill'));
+// }, 3000);
 
 const jsx = (
   <Provider store={store}>
